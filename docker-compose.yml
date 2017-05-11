@@ -1,0 +1,10 @@
+version: '2'
+services:
+  nginx:
+    build: .
+    image: dev-docker-registry.dodgedev.com/nginxhttp2https
+    container_name: nginx
+    ports:
+      - "80:80"
+      - "443:443"
+
